@@ -1,5 +1,5 @@
-Parser  
-flex toypl.l      -> lex.yy.c 생성  
-bison -d toypl.y  -> toypl.tab.c 생성  
-gcc -o toypl lex.yy.c toypl.tab.c  
-./toypl < sample.txt  
+PARSER 
+flex lexer.l      -> lex.yy.c 생성  
+bison -d parser.y  -> toypl.tab.c 생성  
+gcc -o parser lex.yy.c parser.tab.c  
+./parser < sample.txt  
