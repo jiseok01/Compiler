@@ -7,4 +7,5 @@ gcc -o parser lex.yy.c parser.tab.c
 ## PARSER TREE 
 flex lexer.l  
 bison -d parser.y   
-gcc -o ParserTree lex.yy.c paser.tab.c node.c paser.tab.h -lfl 
+gcc -o ParserTree lex.yy.c paser.tab.c node.c paser.tab.h -lfl  
+./ParserTree < input.txt
